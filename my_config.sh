@@ -7,14 +7,8 @@ function change_dir {
   echo -e "goto \033[33m`pwd`\033[0m"                                                                                                                                                                                                                                                                                                                                                     
 }   
   
-function switch_workspace_path {    
-  echo -e "from   \033[36m${WORKSPACE_PATH}\033[0m"                                                                                                                                                                     
-  export WORKSPACE_PATH=$1
-  echo -e "switch \033[33m${WORKSPACE_PATH}\033[0m"                                                                                                                                                                                                                                                                                                                                                  
-}                                                                                                                                                                                                     
   
 export WORKSPACE_PATH=~/im-erlang # 这里改你自己的目录
-alias switch='switch_workspace_path `p4 info | grep "Client root:" | cut -f 3 -d " "`'     
 alias show='echo -e "WORKSPACE_PATH=\033[33m${WORKSPACE_PATH}\033[0m"'                                                                                                                                                                                             
 alias ci='change_dir $WORKSPACE_PATH/'                                                                                                                                                      
 alias cs='change_dir $WORKSPACE_PATH/im_svr'                                                                                                                                                 
