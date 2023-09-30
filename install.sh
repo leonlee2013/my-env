@@ -10,8 +10,18 @@ mkdir -p $WorkPath
 cd $WorkPath
 pwd
 echo "配置环境开始..."
+
+# sudo apt-get -y install lrzsz tmux
+sudo apt-get -y install wget tree silversearcher-ag vim vim-nox
+#配置vim
 git clone https://github.com/leonlee2013/my-vim8
 cd my-vim8 && ./install.sh
+#配置bashrc
+
+echo "#自定义配置
+source ~/.my_config" >> ~/.bashrc
+source ~/.bashrc
+
 pwd
 echo "配置环境完成！！！"
 cd $CurPath
