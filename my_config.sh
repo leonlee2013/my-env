@@ -2,13 +2,13 @@ PS1="[\u@\h \W]\$ "
 export HISTTIMEFORMAT='%F %T '
 
 function change_dir {                                                                                                                                                                                   
-  echo -e "from \033[34m`pwd`\033[0m"                                                                                                                                                                     
+  echo -e "from \033[36m`pwd`\033[0m"                                                                                                                                                                     
   cd $1                                                                                                                                                                                                
   echo -e "goto \033[33m`pwd`\033[0m"                                                                                                                                                                                                                                                                                                                                                     
 }   
   
 function switch_workspace_path {    
-  echo -e "from   \033[34m${WORKSPACE_PATH}\033[0m"                                                                                                                                                                     
+  echo -e "from   \033[36m${WORKSPACE_PATH}\033[0m"                                                                                                                                                                     
   export WORKSPACE_PATH=$1
   echo -e "switch \033[33m${WORKSPACE_PATH}\033[0m"                                                                                                                                                                                                                                                                                                                                                  
 }                                                                                                                                                                                                     
