@@ -10,10 +10,11 @@ CurrentDate=$(date +"%Y-%m-%d_%H-%M-%S")
 WorkPath="myenv_${CurrentDate}"
 sudo mkdir -p $WorkPath
 cd $WorkPath
-
+pwd
 echo "配置环境开始..."
 git clone https://github.com/leonlee2013/my-vim8
 cd my-vim8 && ./install.sh
+pwd
 echo "配置环境完成！！！"
 cd $ExecPath
 rm -rf $WorkPath
