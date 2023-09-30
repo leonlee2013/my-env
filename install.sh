@@ -1,14 +1,14 @@
 #!/bin/bash
 #git clone https://github.com/tpope/vim-pathogen.git
 
- set -e
- ABSFile=`realpath $0`
- ExecPath=`realpath "$(dirname $ABSFile)"`
- cd $ExecPath
+set -e
+ABSFile=`pwd`
+ExecPath=`realpath "$(dirname $ABSFile)"`
+cd $ExecPath
 # 获取当前日期和时间，并格式化为YYYY-MM-DD_HH-MM-SS的形式
 CurrentDate=$(date +"%Y-%m-%d_%H-%M-%S")
 WorkPath="myenv_${CurrentDate}"
-sudo mkdir -p $WorkPath
+mkdir -p $WorkPath
 cd $WorkPath
 pwd
 echo "配置环境开始..."
