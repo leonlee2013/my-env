@@ -5,9 +5,15 @@
  ABSFile=`realpath $0`
  ExecPath=`realpath "$(dirname $ABSFile)"`
  cd $ExecPath
- # mkdir -p $ExecPath/.vim/bundle && cd $ExecPath/.vim/bundle
- #  for github in `cat $ExecPath/vim_plugins.ini` ; do
- #    git clone $github
- #  done
+# 获取当前日期和时间，并格式化为YYYY-MM-DD_HH-MM-SS的形式
+CurrentDate=$(date +"%Y-%m-%d_%H-%M-%S")
+WorkPath="myenv_${CurrentDate}"
+mkdir -p  $WorkPath
+cd $WorkPath
 
- echo "hello my-env!!!!"
+echo "配置环境开始..."
+git clone https://github.com/leonlee2013/my-vim8
+cd my-vim8 && ./install.sh
+echo "配置环境完成！！！"
+cd $ExecPath
+rm -rf $WorkPath
