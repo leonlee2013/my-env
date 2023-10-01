@@ -18,7 +18,7 @@ cd my-vim8 && ./install.sh
 #配置bashrc
 wget -O ~/.my_config.sh https://raw.githubusercontent.com/leonlee2013/my-env/main/my_config.sh
 echo "#自定义配置
-source ~/.my_config" >> ~/.bashrc
+source ~/.my_config.sh" >> ~/.bashrc
 source ~/.bashrc
 echo "配置环境完成！！！"
 cd $CurPath
