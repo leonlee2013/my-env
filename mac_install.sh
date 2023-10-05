@@ -19,5 +19,5 @@ source ~/.my_config.sh" >> ~/.zshrc
 echo "配置环境完成！！！"
 cd $CurPath
 rm -rf $WorkPath
-echo "source ~/.bashrc"
+echo "source ~/.zshrc"
 source ~/.zshrc
