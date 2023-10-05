@@ -1,6 +1,4 @@
-#!/bin/bash
-#git clone https://github.com/tpope/vim-pathogen.git
-
+#!/bin/zsh
 set -e
 CurPath=`pwd`
 # 获取当前日期和时间，并格式化为YYYY-MM-DD_HH-MM-SS的形式
