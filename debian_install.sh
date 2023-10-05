@@ -16,9 +16,9 @@ sudo apt-get -y install universal-ctags wget tree silversearcher-ag vim vim-nox
 git clone https://github.com/leonlee2013/my-vim8
 cd my-vim8 && ./install.sh
 #配置bashrc
-wget -O ~/.my_config.sh https://raw.githubusercontent.com/leonlee2013/my-env/main/my_config.sh
+wget -O ~/.my_debian_cfg.sh https://raw.githubusercontent.com/leonlee2013/my-env/main/my_debian_cfg.sh
 echo "#自定义配置
-source ~/.my_config.sh" >> ~/.bashrc
+source ~/.my_debian_cfg.sh" >> ~/.bashrc
 echo "配置环境完成！！！"
 cd $CurPath
 rm -rf $WorkPath

@@ -13,9 +13,9 @@ echo "配置mac环境开始..."
 git clone https://github.com/leonlee2013/my-vim8
 cd my-vim8 && ./install.sh
 #配置bashrc
-wget -O ~/.my_config.sh https://raw.githubusercontent.com/leonlee2013/my-env/main/my_config.sh
+wget -O ~/.my_mac_cfg.sh https://raw.githubusercontent.com/leonlee2013/my-env/main/my_mac_cfg.sh
 echo "#自定义配置
-source ~/.my_config.sh" >> ~/.zshrc
+source ~/.my_mac_cfg.sh" >> ~/.zshrc
 echo "配置环境完成！！！"
 cd $CurPath
 rm -rf $WorkPath
