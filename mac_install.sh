@@ -19,5 +19,5 @@ source ~/.my_mac_cfg.sh" >> ~/.zshrc
 echo "配置环境完成！！！"
 cd $CurPath
 rm -rf $WorkPath
-echo "source ~/.zshrc"
 source ~/.zshrc
+echo "source ~/.zshrc"
