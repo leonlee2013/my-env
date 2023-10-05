@@ -1,14 +1,10 @@
-PS1="[\u@\h \W]\$ "
-export HISTTIMEFORMAT='%F %T '
-
 function change_dir {                                                                                                                                                                                   
   echo -e "from \033[36m`pwd`\033[0m"                                                                                                                                                                     
   cd $1                                                                                                                                                                                                
   echo -e "goto \033[33m`pwd`\033[0m"                                                                                                                                                                                                                                                                                                                                                     
 }   
   
-  
-export WORKSPACE_PATH=/app # 这里改你自己的目录
+export WORKSPACE_PATH=~/gitlab # 这里改你自己的目录
 alias show='echo -e "WORKSPACE_PATH=\033[33m${WORKSPACE_PATH}\033[0m"'                                                                                                                                                                                             
 alias ci='change_dir $WORKSPACE_PATH/'                                                                                                                                                      
 alias cs='change_dir $WORKSPACE_PATH/im_svr'                                                                                                                                                 
