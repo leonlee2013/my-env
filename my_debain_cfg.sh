@@ -1,4 +1,17 @@
-PS1="[\u@\h \W]\$ "
+function git_branch_name {
+  git symbolic-ref --short HEAD 2>/dev/null
+}
+
+function git_branch_prompt {
+  local branch=`git_branch_name`
+  if [ $branch  ]; then
+    printf "git:%s" $branch;
+  fi
+}
+
+# PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]->\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\e[32m$(git_branch_prompt)\e[0m\$ '
+# PS1="[\u@\h \W]\$ "
+PS1='[\u@\h \W]\e[32m$(git_branch_prompt)\e[0m\$ '
 export HISTTIMEFORMAT='%F %T '
 
 function change_dir {                                                                                                                                                                                   
