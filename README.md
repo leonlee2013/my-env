@@ -1,4 +1,7 @@
 # my-env
+```bash
+ls -al /bin/sh &&  sudo rm /bin/sh && sudo ln -s /bin/bash /bin/sh && ls -al /bin/sh
+```
 
 快捷安装Debian环境
 ```bash
