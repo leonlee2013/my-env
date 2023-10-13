@@ -11,7 +11,7 @@ cd $WorkPath
 echo "配置环境开始..."
 which sudo || echo apt-get -y install sudo
 # sudo apt-get -y install lrzsz tmux
-sudo apt-get -y install universal-ctags wget tree silversearcher-ag vim vim-nox
+sudo apt-get -y install universal-ctags wget tree silversearcher-ag vim vim-nox git
 #配置vim
 git clone https://github.com/leonlee2013/my-vim8
 cd my-vim8 && ./install.sh
