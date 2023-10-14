@@ -12,11 +12,7 @@
 /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/leonlee2013/my-env/main/mac_install.sh)"
 ```
 
-Debian11.6镜像下载：
-
-```
-https://www.debian.org/releases/bullseye/debian-installer/
-```
+[Debian11.6镜像下载](https://www.debian.org/releases/bullseye/debian-installer/)
 
 Debian新环境需要处理下：
 
