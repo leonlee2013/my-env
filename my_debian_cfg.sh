@@ -10,8 +10,8 @@ function git_branch_prompt {
 }
 
 # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]->\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\e[32m$(git_branch_prompt)\e[0m\$ '
-# PS1="[\u@\h \W]\$ "
-PS1='[\u@\h \W\e[32m$(git_branch_prompt)\e[0m]\$ '
+PS1="[\u@\h \W]\$ "
+#PS1='[\u@\h \W\e[32m$(git_branch_prompt)\e[0m]\$ '
 
 export HISTTIMEFORMAT='%F %T '
 
