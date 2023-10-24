@@ -25,7 +25,10 @@ function change_dir {
 export WORKSPACE_PATH=/app # 这里改你自己的目录
 alias show='echo -e "WORKSPACE_PATH=\033[33m${WORKSPACE_PATH}\033[0m"'                                                                                                                                                                                             
 alias ci='change_dir $WORKSPACE_PATH/'                                                                                                                                                      
-alias cs='change_dir $WORKSPACE_PATH/im_svr'                                                                                                                                                 
+alias cs='change_dir $WORKSPACE_PATH/im_svr'
+alias cc='change_dir $WORKSPACE_PATH/im_connection'
+alias cb='change_dir $WORKSPACE_PATH/biz_http'
+alias ch='change_dir $WORKSPACE_PATH/biz_channel'
 alias cgit='change_dir ~/gitlab'                                                                                                                                                      
 alias Ag='ag --erl --go'
 alias Agi='ag --erl --ignore-dir protobuff'
