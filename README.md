@@ -4,6 +4,7 @@
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/leonlee2013/my-env/main/debian_install.sh)"
+source ~/.bashrc
 ```
 
 快捷安装Mac环境
