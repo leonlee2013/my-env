@@ -9,7 +9,7 @@ WorkPath="myenv_${CurrentDate}"
 mkdir -p $WorkPath
 cd $WorkPath
 echo "配置环境开始..."
-which sudo || echo apt-get -y install sudo
+which sudo || apt-get -y install sudo
 # sudo apt-get -y install lrzsz tmux
 sudo apt-get -y install git wget universal-ctags wget tree silversearcher-ag vim vim-nox 
 #配置vim
