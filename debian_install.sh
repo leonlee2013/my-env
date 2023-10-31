@@ -10,8 +10,8 @@ mkdir -p $WorkPath
 cd $WorkPath
 echo "配置环境开始..."
 which sudo || apt-get -y install sudo
-# sudo apt-get -y install lrzsz tmux
-sudo apt-get -y install git wget universal-ctags wget tree silversearcher-ag vim vim-nox 
+# sudo apt-get -y install lrzsz
+sudo apt-get -y install git wget universal-ctags tmux tree silversearcher-ag vim vim-nox 
 #配置bashrc
 #wget -O ~/.my_debian_cfg.sh https://raw.githubusercontent.com/leonlee2013/my-env/main/my_debian_cfg.sh
  curl https://raw.githubusercontent.com/leonlee2013/my-env/main/my_debian_cfg.sh > ~/.my_debian_cfg.sh
