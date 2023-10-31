@@ -17,6 +17,7 @@ sudo apt-get -y install git wget universal-ctags tmux tree silversearcher-ag vim
  curl https://raw.githubusercontent.com/leonlee2013/my-env/main/my_debian_cfg.sh > ~/.my_debian_cfg.sh
 echo "#自定义配置
 source ~/.my_debian_cfg.sh" >> ~/.bashrc
+echo "set -g mouse on" >> ~/.tmux.conf
 echo "配置环境完成！！！"
 #配置vim
 git clone https://github.com/leonlee2013/my-vim8
