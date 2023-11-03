@@ -14,11 +14,10 @@ which sudo || apt-get -y install sudo
 sudo apt-get -y install git wget universal-ctags tmux tree silversearcher-ag vim vim-nox 
 #配置bashrc
 #wget -O ~/.my_debian_cfg.sh https://raw.githubusercontent.com/leonlee2013/my-env/main/my_debian_cfg.sh
- curl https://raw.githubusercontent.com/leonlee2013/my-env/main/my_debian_cfg.sh > ~/.my_debian_cfg.sh
+curl https://raw.githubusercontent.com/leonlee2013/my-env/main/my_debian_cfg.sh > ~/.my_debian_cfg.sh
+curl https://raw.githubusercontent.com/leonlee2013/my-tmux/main/ly_tmux.conf > ~/.tmux.conf
 echo "#自定义配置
 source ~/.my_debian_cfg.sh" >> ~/.bashrc
-echo 'set -g mouse on
-set -g default-terminal "screen-256color"' > ~/.tmux.conf
 echo "配置环境完成！！！"
 #配置vim
 git clone https://github.com/leonlee2013/my-vim8
